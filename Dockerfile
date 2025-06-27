@@ -4,8 +4,9 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Copiar arquivos
-COPY requirements.txt .
-COPY main.py .
+#COPY requirements.txt .
+#COPY main.py .
+COPY . .
 
 # Instalar dependências
 RUN pip install --no-cache-dir -r requirements.txt
