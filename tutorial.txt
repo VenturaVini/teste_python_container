@@ -1,0 +1,4 @@
+# TESTA LOCALENTE
+
+docker build -t python-test-job .
+docker run --rm python-test-job
