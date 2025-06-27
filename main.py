@@ -9,7 +9,7 @@ def main():
     print("📦 Dados:", response.json())
     sleep(15)
     print("📦 Dados:", response.json())
-    enviar_mensagem("📦 Dados:", response.json())
+    enviar_mensagem('Telegram Funcionando!!')
 
 
 if __name__ == "__main__":
