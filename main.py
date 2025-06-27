@@ -1,5 +1,6 @@
 import requests
 from time import sleep
+from services.telegram import enviar_mensagem
 
 def main():
     print("🔁 Iniciando teste Python...")
@@ -8,6 +9,8 @@ def main():
     print("📦 Dados:", response.json())
     sleep(15)
     print("📦 Dados:", response.json())
+    enviar_mensagem("📦 Dados:", response.json())
+
 
 if __name__ == "__main__":
     main()
